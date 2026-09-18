@@ -1,4 +1,4 @@
-name: Teste Maven
+name: Teste do Projeto
 
 on:
   push:
@@ -19,7 +19,6 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-          cache: maven
 
       - name: Compilar e testar
-        run: mvn -B clean package
+        run: bash mvnw -B clean package
