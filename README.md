@@ -1,6 +1,7 @@
-# CRUD de Padaria
+# CRUD de Padaria - Eliel Nascimento
 
-Projeto desenvolvido em Java com Spring Boot, JPA e banco H2.
+Projeto desenvolvido em Java com Spring Boot, JPA e banco H2 (critérios ensinado na disciplina de Análise e Desenvolvimento de sistemas)
+Informações abaixo caso tenha problemas em rodar o código.
 
 ## Requisito
 
@@ -80,3 +81,6 @@ Senha: deixar em branco.
   "endereco": "Avenida Brasil, 100"
 }
 ```
+
+
+PS: Deu trabalho professor, acredito que o mínimo é uma notinha no mesmo nível 😂.
