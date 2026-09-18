@@ -1,57 +1,48 @@
 # CRUD de Padaria
 
-Projeto desenvolvido em Java com Spring Boot para realizar um CRUD simples de padarias.
+Projeto desenvolvido em Java com Spring Boot, JPA e banco H2.
 
-## Campos
+## Requisito
 
-- id
-- nome
-- endereco
+Para executar o projeto é necessário apenas ter o Java 17 instalado.
 
-## Endpoints
-
-- GET /padarias - 201
-- POST /padarias - 200
-- GET /padarias/{id} - 200
-- DELETE /padarias/{id} - 204
-- PUT /padarias/{id} - 201
-
-## Requisitos
-
-Para executar o projeto é necessário ter instalado:
-
-- Java 17
-- Maven
-
-Para conferir se o Java está instalado:
+Para conferir:
 
 ```bash
 java -version
 ```
 
-Para conferir se o Maven está instalado:
+Não é necessário instalar o Maven manualmente. O projeto possui Maven Wrapper e baixa o Maven automaticamente na primeira execução.
 
-```bash
-mvn -version
+## Executar no Windows
+
+A forma mais simples é abrir o arquivo:
+
+```text
+executar.bat
 ```
 
-Caso o comando `mvn` não seja reconhecido, será necessário instalar o Apache Maven e adicioná-lo ao PATH do sistema.
+Também é possível executar pelo Prompt de Comando dentro da pasta do projeto:
 
-## Executar
-
-Dentro da pasta do projeto, execute:
-
-```bash
-mvn spring-boot:run
+```bat
+mvnw.cmd spring-boot:run
 ```
 
-A aplicação será iniciada em:
+Na primeira execução pode ser necessário acesso à internet para baixar o Maven e as dependências do projeto.
 
+Quando a aplicação iniciar, ela ficará disponível em:
+
+```text
 http://localhost:8080
+```
 
-O console do banco H2 fica disponível em:
+## Banco H2
 
+Console:
+
+```text
 http://localhost:8080/h2-console
+```
 
 JDBC URL:
 
@@ -66,6 +57,20 @@ sa
 ```
 
 Senha: deixar em branco.
+
+## Campos
+
+- id
+- nome
+- endereco
+
+## Endpoints
+
+- GET /padarias - 201
+- POST /padarias - 200
+- GET /padarias/{id} - 200
+- DELETE /padarias/{id} - 204
+- PUT /padarias/{id} - 201
 
 ## Exemplo de cadastro
 
