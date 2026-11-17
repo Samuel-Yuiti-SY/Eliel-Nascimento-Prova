@@ -1,5 +1,3 @@
-> **Atividade de Spring Security:** o CRUD de funcionários está em [crud-ads](crud-ads). Veja as instruções de execução, rotas e autenticação no [README da API](crud-ads/README.md).
-
 # CRUD de Padaria - Eliel Nascimento
 
 Projeto desenvolvido em Java com Spring Boot, JPA e banco H2 (critérios ensinado na disciplina de Análise e Desenvolvimento de sistemas)
