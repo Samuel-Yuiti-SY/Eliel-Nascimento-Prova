@@ -57,3 +57,5 @@ As classes foram reunidas dentro de `com.bn.funcionario` para serem encontradas 
 A atualização também salva a rua. A busca de um funcionário inexistente passou a retornar 404. O POST gera um novo ID, mesmo que o cliente envie um no corpo.
 
 O Maven usa Spring Boot 3.5.5, mesma versão do projeto já presente neste repositório, com Java 21. A segurança está em `config/SecurityConfig.java`, usando SecurityFilterChain, CSRF desativado conforme o enunciado e HTTP Basic.
+
+O encaminhamento interno de erros é liberado na configuração para preservar respostas como 404; PUT e DELETE continuam exigindo autenticação na requisição original.
